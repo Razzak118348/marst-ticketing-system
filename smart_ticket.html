@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind and daisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+    <!-- <button class="btn btn-info rounded-lg bg-gray-500 border-none">Info</button> -->
+
+
+    <!-- header start  -->
+    <header class="my-10 mx-32 raleway-font">
+
+        <!-- navbar start  -->
+        <div class="navbar bg-base-100  flex justify-around lg:justify-between">
+            <!-- class "navbar-start" -->
+            <div class="">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>About </a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-3xl font-extrabold ">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 font-medium">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="flex justify-end items-end  ">
+                <button class="btn commonLetterColor commonBackgroundColor text-xl font-bold">Bus
+                    <span> <img src="./images/bus-icon.png" alt=""></span>
+                </button>
+
+
+            </div>
+        </div>
+
+        <!-- banner section -->
+
+        <section class="mt-9 rounded-3xl sm:mb-10">
+
+            <div class="hero h-[80vh] rounded-3xl bannerImage ">
+                <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="w-auto">
+                        <h1 class="mb-5 text-6xl font-extrabold raleway-font">End-to-End Travel with <br> <span
+                                class="commonLetterColor"> P Paribahan</span></h1>
+                        <p class="mb-7 mx-auto w-[55vw] inter-font ">Well managed trust accounts should commit to daily
+                            reconciliation. You should be able to track your business monies in real time similarly to
+                            online banking.</p>
+                        <button class="btn bg-[#1DD100]  border-none text-xl font-bold raleway-font">Buy Ticket</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- card section  -->
+        <div class="flex sm:flex-col lg:flex-row sm:gap-3 lg:w-[51vw] lg:ml-auto lg:mr-auto inter-font lg:-mt-20">
+            <!-- bg-[#FFFFFF] -->
+            <!-- 1st card  -->
+            <div
+                class="hero  bg-base-200 sm:w-96 lg:w-60 h-auto lg:h-24 sm:ml-auto  sm:mr-auto rounded-lg border-b-2 border-[#1DD100] shadow-md lg:bg-[#FFFFFF]">
+                <div class="hero-content flex-col  lg:flex-row">
+                    <img src="./images/people.png" class="sm:max-w-sm  lg:w-10 rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-2xl font-bold">500K+</h1>
+                        <p class="text-[#03071299]">Registered users</p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- card 2nd  -->
+            <div
+                class="hero  bg-base-200 sm:w-96 lg:w-60 h-auto lg:h-24 sm:ml-auto  sm:mr-auto rounded-lg border-b-2 border-[#1DD100] lg:bg-[#FFFFFF]">
+                <div class="hero-content flex-col  lg:flex-row">
+                    <img src="./images/ticket-cupon.png" class="sm:max-w-sm  lg:w-10 rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-2xl font-bold">1.7 lacks</h1>
+                        <p class="text-[#03071299] ">Tickets sold</p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- card third  -->
+            <div
+                class="hero  bg-base-200 sm:w-96 lg:w-60 h-auto lg:h-24 sm:ml-auto  sm:mr-auto rounded-lg border-b-2 border-[#1DD100] lg:bg-[#FFFFFF]">
+                <div class="hero-content flex-col  lg:flex-row">
+                    <img src="./images/stoppage.png" class="sm:max-w-sm  lg:w-10 rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-2xl font-bold">80K+</h1>
+                        <p class="text-[#03071299]">Rental partners</p>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+
+    <!-- main start  -->
+    <main class="mt-32 ">
+
+        <!-- section of offer -->
+        <section class="mb-10 mx-32 flex flex-col justify-center items-center">
+            <h1 class="text-4xl font-bold mb-10 text-center raleway-font">Best offers for you</h1>
+
+            <!-- copun and parcel code  -->
+            <div class="flex sm:flex-col lg:flex-row gap-7 justify-center items-center">
+                <!-- 1st card  -->
+                <div class="inter-font bg-[#FFBF0F] rounded-lg flex flex-row h-44 w-auto lg:w-[38vw] p-0">
+                    <div class="flex flex-col p-12 text-center items-center justify-center">
+                        <h1 class="text-3xl font-black">15% OFF</h1>
+                        <p>on your next purchase</p>
+                        <p class="text-[#03071299]">use by January 2024</p>
+
+                    </div>
+                    <div><img class="h-44" src="./images/cupon-devider.png" alt=""></div>
+
+                    <div class="flex flex-col p-12 text-center items-center justify-center">
+
+                        <h1 class="text-3xl font-black"> NEW15</h1>
+                        <p class="text-[#03071299]">Coupon Code </p>
+
+                    </div>
+                </div>
+
+                <!-- 2nd card  -->
+                <div class="inter-font bg-[#F78C9C] rounded-lg flex flex-row h-44 w-auto lg:w-[38vw]">
+                    <div class="flex flex-col p-12 text-center items-center justify-center">
+                        <h1 class="text-3xl font-black">20% OFF</h1>
+                        <p>on your next purchase</p>
+                        <p class="text-[#03071299]">use by January 2024</p>
+
+                    </div>
+                    <div><img class="h-44" src="./images/info-devider.png" alt=""></div>
+
+                    <div class="flex flex-col p-12 text-center items-center justify-center">
+                        <h1 class="text-3xl font-black"> Couple 20</h1>
+                        <p class="text-[#03071299]">Coupon Code </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-14">
+                <button class="btn commonLetterColor border-[#1DD100] bg-white ">See All Offers</button>
+            </div>
+        </section>
+
+        <!-- ticket full section  -->
+        <section class="mt-32 px-32 py-28 border-t-2 border-[#1DD100] rounded-3xl bg-[#F7F8F8]">
+            <!-- p paribahan section  -->
+            <section>
+                <div class="mb-12">
+                    <h1 class="text-4xl font-bold  text-center raleway-font mb-7">P.H Paribahan</h1>
+                    <p class="inter-font text-center text-[#03071299] lg:w-[60vw] lg:ml-auto lg:mr-auto ">The P.H Travel
+                        System strikes an excellent balance between features, price, and performance. Its
+                        parent-favorite car seat, the KeyFit 35, is easy to install, packed with safety features, and
+                        accommodates most babies comfortably.</p>
+                </div>
+
+                <div class=" bg-white rounded-lg flex flex-row w-auto ">
+
+                    <!-- 1st half div     -->
+                    <div class=" w-[70vw] px-8 py-4">
+
+                        <!-- header part  div  -->
+                        <div class="flex justify-between">
+                            <div class="flex flex-row gap-4">
+                                <div><img src="./images/bus-logo.png" alt=""></div>
+                                <div>
+                                    <h2 class="text-3xl font-bold raleway-font">Greenline Paribahan</h2>
+                                    <p class="text-[#03071299] inter-font">Coach-009-WEB ! AC_Business
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mr-5">
+                                <button class="btn bg-[#1DD10026] commonLetterColor inter-font ">
+                                    <span><img src="./images/bus-icon.png" alt=""></span>
+                                    <span>40</span> Seats left</button>
+                            </div>
+                        </div>
+
+                         <!-- card div .,,date and time  -->
+
+                    <div class="bg-[#F7F8F8] p-5 rounded-2xl mt-10">
+                        <div class="flex justify-between mb-6 mt-2 raleway-font">
+                            <p class="text-[#03071299]">Route</p>
+                            <p>Dhaka - Sylhet</p>
+                        </div>
+                        <hr class="bg-[#03071233]">
+                        <div class="flex justify-between mb-6 mt-2 raleway-font">
+                            <p class="text-[#03071299]">Departure Time</p>
+                            <p>9:00 PM</p>
+                        </div>
+                        <hr class="bg-[#03071233]">
+
+                        <div class="flex flex-row justify-around  mt-6 inter-font">
+                            <button class="btn bg-[#0307120D] text-[#03071299]">Boarding Point - Laxmipur</button>
+                            <button class="btn bg-[#0307120D] text-[#03071299]">Dropping Point - Bogura</button>
+                            <button class="btn bg-[#0307120D] text-[#03071299]">Est. Time - 11 Hour</button>
+                        </div>
+                    </div>
+
+                    <!-- end card div  -->
+                    </div>
+                    <!-- fist half div close  -->
+
+                   
+
+
+                    <div><img class="" src="./images/info-devider.png" alt=""></div>
+
+                    <div class="flex flex-col p-8 text-center items-center justify-center gap-4">
+                        <img src="./images/fare.png" alt="">
+                        <h1 class="text-3xl font-bold"> <span> 550</span>Taka
+                           </h1>
+                        <p class="text-[#03071299] text-xl "> Per Seat </p>
+
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- footer start  -->
+    <footer>
+
+    </footer>
+</body>
+
+</html>
