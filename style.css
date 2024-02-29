@@ -24,3 +24,9 @@
   
       
 }
+hr{
+    border: 1px dashed rgba(3, 7, 18, 0.2) 
+}
+.ticket p{
+    color: #03071280;
+}
