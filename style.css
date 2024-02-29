@@ -14,7 +14,9 @@
 .commonBackgroundColor{
     background-color:rgba(29, 209, 0, 0.1) ;
 }
-
+.seatNumberColor{
+    color: #03071280;
+}
 .bannerImage{
     
         background-image: linear-gradient(to bottom, rgba(78, 82, 88, 0.006),rgba(13, 32, 78, 0.063)), url('./images/banner.png');
@@ -26,6 +28,9 @@
 }
 hr{
     border: 1px dashed rgba(3, 7, 18, 0.2) 
+}
+.hr2{
+    border: 1px dashed rgba(130, 131, 132, 0.836)
 }
 .ticket p{
     color: #03071280;

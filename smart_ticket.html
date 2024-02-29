@@ -27,7 +27,7 @@
 
 
     <!-- header start  -->
-    <header class="my-10 mx-32 raleway-font">
+    <header class="my-10 mx-32 raleway-font ">
 
         <!-- navbar start  -->
         <div class="navbar bg-base-100  flex justify-around lg:justify-between">
@@ -217,43 +217,43 @@
                             </div>
                         </div>
 
-                         <!-- card div .,,date and time  -->
+                        <!-- card div .,,date and time  -->
 
-                    <div class="bg-[#F7F8F8] p-5 rounded-2xl mt-10">
-                        <div class="flex justify-between mb-6 mt-2 raleway-font">
-                            <p class="text-[#03071299]">Route</p>
-                            <p>Dhaka - Sylhet</p>
+                        <div class="bg-[#F7F8F8] p-5 rounded-2xl mt-10">
+                            <div class="flex justify-between mb-6 mt-2 raleway-font">
+                                <p class="text-[#03071299]">Route</p>
+                                <p>Dhaka - Sylhet</p>
+                            </div>
+                            <hr>
+
+                            <div class="flex justify-between mb-6 mt-2 raleway-font">
+                                <p class="text-[#03071299]">Departure Time</p>
+                                <p>9:00 PM</p>
+                            </div>
+                            <hr>
+
+                            <div class="flex sm:flex-col lg:flex-row  justify-around  mt-6 inter-font">
+                                <button class="btn bg-[#0307120D] text-[#03071299]">Boarding Point - Laxmipur</button>
+                                <button class="btn bg-[#0307120D] text-[#03071299]">Dropping Point - Bogura</button>
+                                <button class="btn bg-[#0307120D] text-[#03071299]">Est. Time - 11 Hour</button>
+                            </div>
                         </div>
-                        <hr>
 
-                        <div class="flex justify-between mb-6 mt-2 raleway-font">
-                            <p class="text-[#03071299]">Departure Time</p>
-                            <p>9:00 PM</p>
-                        </div>
-                        <hr>
-
-                        <div class="flex flex-row justify-around  mt-6 inter-font">
-                            <button class="btn bg-[#0307120D] text-[#03071299]">Boarding Point - Laxmipur</button>
-                            <button class="btn bg-[#0307120D] text-[#03071299]">Dropping Point - Bogura</button>
-                            <button class="btn bg-[#0307120D] text-[#03071299]">Est. Time - 11 Hour</button>
-                        </div>
-                    </div>
-
-                    <!-- end card div  -->
+                        <!-- end card div  -->
                     </div>
                     <!-- fist half div close  -->
 
-                   
 
 
-                    <div><img class="" src="./images/info-devider.png" alt=""></div>
+
+                    <div><img class="h-auto sm:h-full" src="./images/info-devider.png" alt=""></div>
 
                     <div class="flex flex-col p-8 text-center items-center justify-center gap-4">
                         <img src="./images/fare.png" alt="">
                         <h1 class="text-3xl font-bold"> <span> 550</span>Taka
-                           </h1>
+                        </h1>
                         <p class="text-[#03071299] text-xl "> Per Seat </p>
-                        
+
 
                     </div>
                 </div>
@@ -261,23 +261,24 @@
             </section>
 
             <!-- select your seat section  -->
-            <section class="mt-16 bg-[#FFFFFF] rounded-lg p-8">
+            <section class="mt-16 bg-[#FFFFFF] rounded-lg p-8 flex flex-row gap-20">
 
                 <!-- ticket available section  -->
-                <section class="ticket">
-                    <div>
-                        <h3 class="text-2xl font-semibold mt-3 mb-3 text-[#030711] raleway-font" style="inline-size: auto; ">Select Your Seat</h3>
+                <section class="ticket-select w-[40vw] border-black border-2">
+                    <div class="w-full ">
+                        <h3 class="text-2xl font-semibold mt-3 mb-3 text-[#030711] raleway-font"
+                            style="inline-size: auto; ">Select Your Seat</h3>
                         <hr>
-                        <div class="flex justify-between mb-6 mt-2 raleway-font">
+                        <div class="flex justify-between mb-6 mt-2 inter-font">
                             <div class="flex">
-                               
+
                                 <span> <img src="./images/seat-gray.png" alt=""></span>
                                 <p class="text-[#03071299]">Available</p>
 
                             </div>
                             <div class="flex ">
                                 <span>
-                                <img src="./images/seat-green.png" alt="">
+                                    <img src="./images/seat-green.png" alt="">
                                 </span>
                                 <p class="font-bold" style="color:rgb(29, 209, 0) ;">Selected</p>
                             </div>
@@ -285,26 +286,141 @@
                         <hr>
                     </div>
 
-                    
+                    <div class="flex flex-col w-full inter-font">
+                        <div class="flex justify-end items-end mt-5 ">
+                            <button class="btn rounded-lg w-28 bg-[#F7F8F8]"><span> <img src="./images/wheel.png"
+                                        alt=""></span></button>
+                        </div>
+                        <div id="ticket" class="flex gap-16 my-6 ">
+                            <div class="flex gap-6">
+                                <p style="inline-size: auto; " class="pt-3 seatNumberColor">A</p>
+                                <button id="A1" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> A1 </button>
+                                <button id="A2" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> A2 </button>
+
+                            </div>
+                            <div class="flex gap-8">
+
+                                <button id="A3" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> A3 </button>
+                                <button id="A4" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> A4 </button>
+                            </div>
+                        </div>
+                        <div id="ticket" class="flex gap-16 my-6 ">
+                            <div class="flex gap-6">
+                                <p style="inline-size: auto; " class="pt-3 seatNumberColor">B</p>
+                                <button id="B1" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> B1 </button>
+                                <button id="B2" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> B2 </button>
+
+                            </div>
+                            <div class="flex gap-8">
+
+                                <button id="B3" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> B3 </button>
+                                <button id="B4" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> B4 </button>
+                            </div>
+                        </div>
+                        <div id="ticket" class="flex gap-16 my-6 ">
+                            <div class="flex gap-6">
+                                <p style="inline-size: auto; " class="pt-3 seatNumberColor">C</p>
+                                <button id="C1" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> C1 </button>
+                                <button id="C2" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> C2 </button>
+
+                            </div>
+                            <div class="flex gap-8">
+
+                                <button id="C3" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> C3 </button>
+                                <button id="C4" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> C4 </button>
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
                 <!-- ticket available section end  -->
 
                 <!-- purchase section  -->
+                <section class="w-auto">
+                    <h1 class="text-2xl font-semibold mb-6 raleway-font">Select Your Seat</h1>
 
+
+                    <!-- seat count and money  -->
+                    <div class="inter-font bg-[#F7F8F8] p-8 rounded-xl">
+                        <div class="flex justify-between mt-6">
+                            <p class="text-xl font-medium">Seat <span
+                                    class="bg-[#1DD100] text-white rounded-lg">0</span> </p>
+                            <p class="text-xl font-medium">class</p>
+                            <p class="text-xl font-medium">Price</p>
+                        </div>
+                        <hr class="w-[30vw] mt-3">
+                        <div id="seat-price">
+                            <!-- append div  -->
+                        </div>
+                        <hr class="w-[30vw] mb-4">
+                        <div class="flex justify-between">
+                            <p class="text-xl font-medium">Total Price</p>
+                            <p class="text-xl font-medium">BDT <span>0</span></p>
+                        </div>
+
+                        <div class="input  flex items-center gap-2 mt-6 mb-6">
+                            <input type="text" class="grow" placeholder="Search" />
+                            <span class=""><button id="apply" class="btn  font-semibold bg-[#1DD100]"
+                                    disabled>Apply</button></span>
+                            <!-- class="badge " -->
+                        </div>
+
+                        <div class="flex justify-between mb-6">
+                            <p class="text-xl font-medium">Grand Total
+                            </p>
+                            <p class="text-xl font-medium">BDT <span id="grand-total">0</span></p>
+                        </div>
+
+                        <div>
+                            <button class="btn w-full rounded-2xl bg-[#1DD100] text-xl font-semibold">Next</button>
+                        </div>
+                        <div class="flex justify-between mt-6">
+                            <a href="#" class="underline text-[#03071299]">Terms and Conditions</a>
+                            <a href="#" class="underline text-[#03071299]">Cancellation Policy</a>
+                        </div>
+                    </div>
+
+                </section>
                 <!-- purchase section end  -->
 
             </section>
+
         </section>
 
     </main>
 
     <!-- footer start  -->
-    <footer>
-
-
+    <footer class="footer p-28 bg-neutral  text-neutral-content   bg-black flex flex-col  ">
+        
+            <div class="min-w-full ">
+                <div class="min-w-full flex flex-row justify-between">
+                    <div>
+                        <p class="raleway-font text-3xl font-bold mb-4">P-Ticket</p>
+                        <p class="inter-font">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+                    </div>
+        
+                    <div class="">
+                        <p class="raleway-font text-2xl font-semibold mb-3">Download App</p>
+                        <img src="./images/Group 104.png" alt="">
+                        
+                    </div>
+                </div>
+                <hr  class="min-w-full hr2 mt-10" >
+            </div>
+     <div class=" min-w-full inter-font flex flex-row justify-between mt-10 " >
+        <p class="inline " style="color: #FFFFFFB3;">@all rights reserved, P-Ticket services limited.2024</p>
+        <div class="flex gap-6">
+            <p>Terms & condition</p>
+            <p>Return & refund policy</p>
+            <p>Privacy policy</p>
+        </div>
+     </div>
     </footer>
+
 
     <script src="./smart_ticket.js"></script>
 </body>
+
+
 
 </html>
