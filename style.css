@@ -42,3 +42,11 @@ hr{
     color: #03071280;
 }
 
+li{
+    display: flex;
+   gap: 170px;
+    
+    list-style: none;
+    
+    
+}
