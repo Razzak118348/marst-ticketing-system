@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Smart Ticket System Buss</title>
 
     <!-- tailwind and daisyUi -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -81,7 +81,7 @@
                         <p class="mb-7 mx-auto w-[55vw] inter-font ">Well managed trust accounts should commit to daily
                             reconciliation. You should be able to track your business monies in real time similarly to
                             online banking.</p>
-                        <button class="btn bg-[#1DD100]  border-none text-xl font-bold raleway-font">Buy Ticket</button>
+                        <button onclick="scrollSection('paribahan')" class="btn bg-[#1DD100]  border-none text-xl font-bold raleway-font">Buy Ticket</button>
                     </div>
                 </div>
             </div>
@@ -183,7 +183,7 @@
         </section>
 
         <!-- ticket full section  -->
-        <section class="mt-32 px-32 py-28 border-t-2 border-[#1DD100] rounded-3xl bg-[#F7F8F8]">
+        <section id="paribahan" class="mt-32 px-32 py-28 border-t-2 border-[#1DD100] rounded-3xl bg-[#F7F8F8]">
             <!-- p paribahan section  -->
             <section>
                 <div class="mb-12">
@@ -213,7 +213,7 @@
                             <div class="mr-5">
                                 <button class="btn bg-[#1DD10026] commonLetterColor inter-font ">
                                     <span><img src="./images/bus-icon.png" alt=""></span>
-                                    <span>40</span> Seats left</button>
+                                    <span id="total-seat">12</span> Seats left</button>
                             </div>
                         </div>
 
@@ -291,43 +291,43 @@
                             <button class="btn rounded-lg w-28 bg-[#F7F8F8]"><span> <img src="./images/wheel.png"
                                         alt=""></span></button>
                         </div>
-                        <div id="ticket" class="flex gap-16 my-6 ">
+                        <div id="ticket-a" class="flex gap-16 my-6 ">
                             <div class="flex gap-6">
                                 <p style="inline-size: auto; " class="pt-3 seatNumberColor">A</p>
-                                <button id="A1" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> A1 </button>
-                                <button id="A2" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> A2 </button>
+                                <button id="A1" class="btn add-btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> A1 </button>
+                                <button id="A2" class="btn add-btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> A2 </button>
 
                             </div>
                             <div class="flex gap-8">
 
-                                <button id="A3" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> A3 </button>
-                                <button id="A4" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> A4 </button>
+                                <button id="A3" class="btn add-btn  rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> A3 </button>
+                                <button id="A4" class="btn add-btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> A4 </button>
                             </div>
                         </div>
-                        <div id="ticket" class="flex gap-16 my-6 ">
+                        <div id="ticket-b" class="flex gap-16 my-6 ">
                             <div class="flex gap-6">
                                 <p style="inline-size: auto; " class="pt-3 seatNumberColor">B</p>
-                                <button id="B1" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> B1 </button>
-                                <button id="B2" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> B2 </button>
+                                <button id="B1" class="btn add-btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> B1 </button>
+                                <button id="B2" class="btn add-btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> B2 </button>
 
                             </div>
                             <div class="flex gap-8">
 
-                                <button id="B3" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> B3 </button>
-                                <button id="B4" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> B4 </button>
+                                <button id="B3" class="btn add-btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> B3 </button>
+                                <button id="B4" class="btn add-btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> B4 </button>
                             </div>
                         </div>
-                        <div id="ticket" class="flex gap-16 my-6 ">
+                        <div id="ticket-c" class="flex gap-16 my-6 ">
                             <div class="flex gap-6">
                                 <p style="inline-size: auto; " class="pt-3 seatNumberColor">C</p>
-                                <button id="C1" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> C1 </button>
-                                <button id="C2" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> C2 </button>
+                                <button id="C1" class="btn add-btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> C1 </button>
+                                <button id="C2" class="btn add-btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> C2 </button>
 
                             </div>
                             <div class="flex gap-8">
 
-                                <button id="C3" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> C3 </button>
-                                <button id="C4" class="btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> C4 </button>
+                                <button id="C3" class="btn add-btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> C3 </button>
+                                <button id="C4" class="btn add-btn rounded-lg w-28 bg-[#F7F8F8] seatNumberColor"> C4 </button>
                             </div>
                         </div>
                     </div>
@@ -344,11 +344,12 @@
                     <div class="inter-font bg-[#F7F8F8] p-8 rounded-xl">
                         <div class="flex justify-between mt-6">
                             <p class="text-xl font-medium">Seat <span
-                                    class="bg-[#1DD100] text-white rounded-lg">0</span> </p>
+                                 id="seat-number"   class="bg-[#1DD100] text-white rounded-lg">0</span> </p>
                             <p class="text-xl font-medium">class</p>
                             <p class="text-xl font-medium">Price</p>
                         </div>
                         <hr class="w-[30vw] mt-3">
+
                         <div id="seat-price">
                             <!-- append div  -->
                         </div>
@@ -359,9 +360,11 @@
                         </div>
 
                         <div class="input  flex items-center gap-2 mt-6 mb-6">
-                            <input type="text" class="grow" placeholder="Search" />
-                            <span class=""><button id="apply" class="btn  font-semibold bg-[#1DD100]"
-                                    disabled>Apply</button></span>
+                            <input type="text" class="grow  " placeholder="Search" />
+                            <span>
+                                <button id="apply" class="btn h-2   font-semibold bg-[#1DD100]"
+                                    disabled>Apply</button>
+                            </span>
                             <!-- class="badge " -->
                         </div>
 
@@ -372,7 +375,7 @@
                         </div>
 
                         <div>
-                            <button class="btn w-full rounded-2xl bg-[#1DD100] text-xl font-semibold">Next</button>
+                            <button id="next-btn" class="btn w-full rounded-2xl bg-[#1DD100] text-xl font-semibold" disabled>Next</button>
                         </div>
                         <div class="flex justify-between mt-6">
                             <a href="#" class="underline text-[#03071299]">Terms and Conditions</a>
